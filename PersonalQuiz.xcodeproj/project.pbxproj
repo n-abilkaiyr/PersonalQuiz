@@ -13,6 +13,8 @@
 		74CDD31C25594EA20069F0B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDD31A25594EA20069F0B6 /* Main.storyboard */; };
 		74CDD31E25594EA30069F0B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CDD31D25594EA30069F0B6 /* Assets.xcassets */; };
 		74CDD32125594EA30069F0B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CDD31F25594EA30069F0B6 /* LaunchScreen.storyboard */; };
+		74CDD3362559ADC80069F0B6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDD3352559ADC80069F0B6 /* Question.swift */; };
+		74CDD3392559AE0D0069F0B6 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDD3382559AE0D0069F0B6 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		74CDD31D25594EA30069F0B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CDD32025594EA30069F0B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74CDD32225594EA30069F0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CDD3352559ADC80069F0B6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		74CDD3382559AE0D0069F0B6 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		74CDD31325594EA20069F0B6 /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				74CDD31425594EA20069F0B6 /* AppDelegate.swift */,
-				74CDD31625594EA20069F0B6 /* SceneDelegate.swift */,
-				74CDD31825594EA20069F0B6 /* ViewController.swift */,
-				74CDD31A25594EA20069F0B6 /* Main.storyboard */,
-				74CDD31D25594EA30069F0B6 /* Assets.xcassets */,
-				74CDD31F25594EA30069F0B6 /* LaunchScreen.storyboard */,
-				74CDD32225594EA30069F0B6 /* Info.plist */,
+				74CDD32F255951670069F0B6 /* ViewControllers */,
+				74CDD333255953620069F0B6 /* Models */,
+				74CDD329255950B60069F0B6 /* Storyboards */,
+				74CDD332255953010069F0B6 /* Resources */,
+				74CDD32A255951070069F0B6 /* Supporting Files */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		74CDD329255950B60069F0B6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				74CDD31A25594EA20069F0B6 /* Main.storyboard */,
+				74CDD31F25594EA30069F0B6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		74CDD32A255951070069F0B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74CDD31425594EA20069F0B6 /* AppDelegate.swift */,
+				74CDD31625594EA20069F0B6 /* SceneDelegate.swift */,
+				74CDD32225594EA30069F0B6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74CDD32F255951670069F0B6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74CDD31825594EA20069F0B6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74CDD332255953010069F0B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74CDD31D25594EA30069F0B6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74CDD333255953620069F0B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74CDD3352559ADC80069F0B6 /* Question.swift */,
+				74CDD3382559AE0D0069F0B6 /* Answer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				74CDD31925594EA20069F0B6 /* ViewController.swift in Sources */,
+				74CDD3362559ADC80069F0B6 /* Question.swift in Sources */,
+				74CDD3392559AE0D0069F0B6 /* Answer.swift in Sources */,
 				74CDD31525594EA20069F0B6 /* AppDelegate.swift in Sources */,
 				74CDD31725594EA20069F0B6 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5P3M2D27A;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = "PersonalQuiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5P3M2D27A;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = "PersonalQuiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
